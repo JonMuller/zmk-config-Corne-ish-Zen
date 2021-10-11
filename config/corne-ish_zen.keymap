@@ -101,8 +101,8 @@
 //             | GUI | LWR | ENT |   | SPC | RSE  | ALT |
                         bindings = <
 &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P &kp BSPC
-&kp ESC   &bh 3 A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K &kp L   &kp SQT &kp SEMI
-&kp LSHFT   &mt LSHFT Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &mt RSHFT FSLH &kp RET
+&none   &bh 3 A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K &kp L   &kp SQT &none
+&none   &mt LSHFT Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &mt RSHFT FSLH &none
         &kp LGUI &bh 1 HOME &mt LCTRL RET   &kp SPACE &bh 2 END &mt RALT LG(V)
                         >;
 
@@ -115,9 +115,9 @@
 // |  F7 |  F8 |  F10|  F11|  F12|   |  1  |  2  |  3  | BSL | CTRL/ENT |
 //                    | CAS |     | Alt;Ent |   | Ctrl;F1 |  0  | shift;. |
                         bindings = <
-&kp TAB   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR     &kp PG_UP &kp N7 &kp N8 &kp N9 &kp BSPC  &kp BSPC
-&kp ESC   &kp F2       &hm LCTRL F3  &hm LSHFT F4  &hm LALT F5  &kp F6         &kp PG_DN &kp N4 &kp N5 &kp N6 &kp BSLH &kp SEMI
-&kp LSHFT   &kp F7       &kp F8       &kp F10      &kp F11      &kp F12        &kp RET &kp N1 &kp N2 &kp N3  &kp LC(RET) &kp RET
+&none   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR     &kp PG_UP &kp N7 &kp N8 &kp N9 &kp BSPC  &none
+&none   &kp F2       &hm LCTRL F3  &hm LSHFT F4  &hm LALT F5  &kp F6         &kp PG_DN &kp N4 &kp N5 &kp N6 &kp BSLH &none
+&none   &kp F7       &kp F8       &kp F10      &kp F11      &kp F12        &kp RET &kp N1 &kp N2 &kp N3  &kp LC(RET) &none
                	        &kp LC(LA(LSHFT)) &trans       &mt RALT RET      &mt LCTRL F1  &kp N0  &mt LSHFT DOT
                         >;
 		label = "Numbers";
@@ -130,9 +130,9 @@
 // |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-&kp TAB   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT             &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR  &kp BSPC
-&kp ESC   &kp TAB   &kp CAPS &kp F13   &out OUT_TOG &kp LGUI      &kp MINUS &kp EQUAL &kp LBRC &kp RBRC &kp PIPE &kp SEMI
-&kp LSHFT   &kp ESC   &kp GRAVE &trans   &kp F9   &kp F17             &kp UNDER &kp PLUS  &kp LBKT &kp RBKT &kp BSLH &kp RET
+&none   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT             &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR  &none
+&none   &kp TAB   &kp CAPS &kp F13   &out OUT_TOG &kp LGUI      &kp MINUS &kp EQUAL &kp LBRC &kp RBRC &kp PIPE &none
+&none   &kp ESC   &kp GRAVE &trans   &kp F9   &kp F17             &kp UNDER &kp PLUS  &kp LBKT &kp RBKT &kp BSLH &none
         	     &kp LCTRL &kp LALT   &mt LSHFT LS(INS)   &kp RET   &trans    &mt RALT TILDE
                         >;
 
@@ -146,9 +146,9 @@
 // |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-&kp TAB   &bootloader  &kp AT &kp HASH &kp DLLR &kp SLCK              &kp C_VOL_UP &trans  &trans &trans &kp DQT &kp BSPC
-&kp ESC   &trans   &trans &kp LC(LSHFT)  &mt LSHFT UP   &kp PSCRN   &kp C_VOL_DN &trans &trans        &kp UP &kp SEMI &kp SEMI
-&kp LSHFT   &kp LNLCK   &trans &kp LEFT &kp DOWN &kp RIGHT              &kp C_MUTE &trans  &kp LEFT        &kp DOWN &kp RIGHT &kp RET
+&kp TAB   &bootloader  &kp AT &kp HASH &kp DLLR &kp SLCK              &kp C_VOL_UP &trans  &trans &trans &kp DQT &none
+&none   &trans   &trans &kp LC(LSHFT)  &mt LSHFT UP   &kp PSCRN   &kp C_VOL_DN &trans &trans        &kp UP &kp SEMI &none
+&none   &kp LNLCK   &trans &kp LEFT &kp DOWN &kp RIGHT              &kp C_MUTE &trans  &kp LEFT        &kp DOWN &kp RIGHT &none
         	     &kp LG(Z) &kp LG(X)   &kp LG(C)   &kp LC(LA(W))   &kp LC(LA(P))    &kp LC(LA(R))
                         >;
 
