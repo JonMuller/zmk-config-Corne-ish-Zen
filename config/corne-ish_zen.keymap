@@ -40,6 +40,16 @@
             key-positions = <2 3 4>;
             bindings = <&kp PSCRN>;
 	 };
+	 combo_cw {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <3 4 5>;
+            bindings = <&caps_word>;
+        };
+	 combo_tab {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <13 14 15>;
+            bindings = <&kp TAB>;
+        };
 	 combo_esc {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <1 2 3>;
@@ -88,6 +98,10 @@
         };
      };
    };
+
+&caps_word {
+	continue-list = <UNDERSCORE MINUS BACKSPACE DELETE HOME END LEFT RIGHT>;
+};
 
 / {
         keymap {
