@@ -35,6 +35,11 @@
             key-positions = <14 15 16>;
             bindings = <&kp DEL>;
         };
+	 combo_home {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 16 17>;
+            bindings = <&kp LS(HOME)>;
+        };
 	 combo_printsc {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <2 3 4>;
@@ -160,7 +165,7 @@
 // |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-&kp TAB   &bootloader  &kp AT &kp HASH &kp DLLR &kp SLCK              &kp C_VOL_UP &trans  &trans &trans &kp DQT &none
+&kp TAB   &bootloader  &reset &kp HASH &kp DLLR &kp SLCK              &kp C_VOL_UP &trans  &trans &trans &kp DQT &none
 &none   &trans   &trans &kp LC(LSHFT)  &mt LSHFT UP   &kp PSCRN   &kp C_VOL_DN &trans &trans        &kp UP &kp SEMI &none
 &none   &kp LNLCK   &kp QMARK &kp LEFT &kp DOWN &kp RIGHT              &kp C_MUTE &trans  &kp LEFT        &kp DOWN &kp RIGHT &none
         	     &kp LG(Z) &kp LG(X)   &kp LG(C)   &kp LC(LA(W))   &kp LC(LA(P))    &kp LC(LA(R))
