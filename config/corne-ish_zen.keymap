@@ -132,12 +132,12 @@
 	 combo_paste {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <31 32 33>;
-            bindings = <&kp LC(BSPC)>;
+            bindings = <&kp LC(INS)>;
         };
 	 combo_bksp {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <19 20 21>;
-            bindings = <&kp LS(INS)>;
+            bindings = <&kp BSPC>;
         };
     };
 };
